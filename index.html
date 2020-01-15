@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Memory Test</title>
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <script src="https://kit.fontawesome.com/779776ff0a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="main">
+
+        <section id="app">
+
+            <div id="app-start">
+                <i class="app-image fa fa-brain"></i>
+                <h1>Memory Test</h1>
+                <h2>Memorise the words</h2>
+                <button id="start-app-btn">Begin Test</button>
+            </div>
+
+            <div id="app-main">
+                <div class="lives"></div>
+                <span id="score">0</span>
+                <span id="word"></span>
+                <div class="game-buttons">
+                    <a id="new-word" data-choice="new" href="#">New</a>
+                    <a id="old-word" data-choice="old" href="#">Old</a>
+                </div>
+            </div>
+
+            <div id="app-end">
+                <h2>You Scored:</h2>
+                <span id="final-score"></span>
+                <div class="game-buttons">
+                    <a id="restart-game" href="#">Retry</a>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+    
+    <script src="js/wordList.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
