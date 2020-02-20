@@ -24,6 +24,11 @@
         const currentWord = wordText.textContent;
         let randomWord = game.getRandomWord();
 
+        // Prevent Duplicate Word
+        while (randomWord === currentWord) {
+            randomWord = game.getRandomWord();
+        }
+
         if (
             (choice === 'new' && game.isNewWord(currentWord)) || 
             (choice === 'old' && game.isDuplicateWord(currentWord))
