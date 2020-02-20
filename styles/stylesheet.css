@@ -190,3 +190,20 @@ h2 {
     padding-top: 6px;
     padding-right: 12px;
 }
+
+@media (max-width: 720px) {
+    h1 {
+        text-align: center;
+        font-size: 42px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .heart {
+        transform: scale(0.8);
+        margin: 0px;
+    }
+    .word {
+        font-size: 38px;
+    }
+}
